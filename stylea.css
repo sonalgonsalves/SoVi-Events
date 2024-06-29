@@ -1,0 +1,130 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  button {
+    background: #8bc04fd8;
+    border: 2px solid transparent;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+  }
+  
+  button:hover {
+    background: transparent;
+    border: 2px solid #8bc04fd8;
+    cursor: pointer;
+  }
+  
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  /* Navbar styles */
+  .navbar {
+    background-color: #005f73;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    position: fixed; /* Make navbar fixed */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Higher z-index to ensure it's on top */
+  }
+  .navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .navbar .logout-button {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  /* Side menu styles */
+  .side-menu {
+    background-color: #05668d;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 60px; /* Adjusted to push down below the navbar */
+    left: 0;
+    padding: 20px;
+    z-index: 500; /* Lower z-index than navbar */
+  }
+  
+  .side-menu ul {
+    list-style-type: none;
+  }
+  .side-menu ul li {
+    padding:15px;
+    cursor: pointer;
+    margin:0px;
+  }
+
+  .side-menu ul li.active {
+    background-color:rgb(19, 63, 129); /* active color */
+    font-weight: bold;
+  }
+
+  .side-menu ul li:hover {
+    background-color:rgb(13, 44, 91); /* active color */
+    font-weight: bold;
+  }
+
+  .side-menu a {
+    /* Remove any existing styles */
+    text-decoration: none;
+    color: inherit;
+    /* background-color: pink; */
+    padding:15px;
+  }
+  /* Main content styles */
+  .main-content {
+    margin-left: 200px;
+    padding: 20px;
+    padding-top: 80px; /* Add padding to account for fixed navbar */
+  }
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  th,
+  td {
+    padding: 12px 15px;
+  }
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
